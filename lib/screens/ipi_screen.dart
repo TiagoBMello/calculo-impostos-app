@@ -17,7 +17,7 @@ class _IpiScreenState extends State<IpiScreen> {
   final percentual = double.tryParse(_percentualController.text.replaceAll(',', '.'));
 
   if (valor != null && percentual != null) {
-    final url = Uri.parse('http://192.168.15.2:3000/api/ipi');
+    final url = Uri.parse('http://localhost:3000/api/ipi');
 
     final response = await http.post(
       url,
